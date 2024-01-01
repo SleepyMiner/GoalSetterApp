@@ -5,8 +5,8 @@ A REST API based goal setter app which sets the goals of users. ***(not complete
 
 My very first MERN project while learning it.
 
-## Pre-Requisites
-Languages:
+## Languages
+This project is heavily dependent on these languages:
 - JavaScript
 - CSS
 - HTML
