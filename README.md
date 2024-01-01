@@ -1,5 +1,5 @@
 
-# Goal Setter App
+# Goal Setter App *(in development)*
 
 A REST API based goal setter app which sets the goals of users. ***(not complete in development)***
 
