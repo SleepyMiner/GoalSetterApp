@@ -73,10 +73,16 @@ const loginUser = asyncHandler(async (req, res) => {
 });
 
 //@desc Get User data
-//@route /api/users/
-//@access Public
+//@route /api/users/me
+//@access Private
 const getMe = asyncHandler(async (req, res) => {
-  res.status(200).json({ message: "User Data Displayed" });
+  const { _id, name, email } = await User.findById(req.user.id);
+
+  res.status(200).json({
+    id: _id,
+    name,
+    email,
+  });
 });
 
 //JWT Token
